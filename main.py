@@ -19,8 +19,8 @@ class Personal_card:
 
 #Names database
 
-person1 = Person(name="Elizabeth", surname="Martinez", company="Muscle Factory", job="Oceanographer", email="ElizabethMMartinez@dayrep.com")
-person2 = Person(name="Carl", surname="McCarthy", company="Foxmoor", job="Labor relations manager", email="CarlDMcCarthy@jourrapide.com")
-person3 = Person(name="Kimberly", surname="Tyner", company="Zany Brainy", job="Nuclear medicine technologist", email="KimberlyTTyner@dayrep.com")
-person4 = Person(name="Buford", surname="Duncan", company="Paul's Record Hut", job="Forester", email="BufordCDuncan@armyspy.com")
-person5 = Person(name="Michelle", surname="McCormick", company="KG Menswear", job="Municipal court judge", email="MichelleBMcCormick@teleworm.us")
+person1 = Personal_card(name="Elizabeth", surname="Martinez", company="Muscle Factory", job="Oceanographer", email="ElizabethMMartinez@dayrep.com")
+person2 = Personal_card(name="Carl", surname="McCarthy", company="Foxmoor", job="Labor relations manager", email="CarlDMcCarthy@jourrapide.com")
+person3 = Personal_card(name="Kimberly", surname="Tyner", company="Zany Brainy", job="Nuclear medicine technologist", email="KimberlyTTyner@dayrep.com")
+person4 = Personal_card(name="Buford", surname="Duncan", company="Paul's Record Hut", job="Forester", email="BufordCDuncan@armyspy.com")
+person5 = Personal_card(name="Michelle", surname="McCormick", company="KG Menswear", job="Municipal court judge", email="MichelleBMcCormick@teleworm.us")
