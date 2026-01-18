@@ -5,7 +5,7 @@ class Personal_card:
         self.name = name
         self.surname = surname
         self.company = company
-        self.occupation = job
+        self.job = job
         self.email = email
     def __str__(self):
         return f'{self.name} {self.surname} {self.mail}'
@@ -24,3 +24,14 @@ person2 = Personal_card(name="Carl", surname="McCarthy", company="Foxmoor", job=
 person3 = Personal_card(name="Kimberly", surname="Tyner", company="Zany Brainy", job="Nuclear medicine technologist", email="KimberlyTTyner@dayrep.com")
 person4 = Personal_card(name="Buford", surname="Duncan", company="Paul's Record Hut", job="Forester", email="BufordCDuncan@armyspy.com")
 person5 = Personal_card(name="Michelle", surname="McCormick", company="KG Menswear", job="Municipal court judge", email="MichelleBMcCormick@teleworm.us")
+
+#Sorting by name, surname, email with using lambda
+
+persons = [person1, person2, person3, person4, person5]
+by_name = sorted(persons, key=lambda person: person.name)
+by_surname = sorted(persons, key=lambda person: person.surname)
+by_email = sorted(persons, key=lambda person: person.email)
+
+print(by_name)
+print(by_surname)
+print(by_email)
