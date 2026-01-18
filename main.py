@@ -13,3 +13,6 @@ class Personal_card:
         return f"Personal_card(name={self.name} surname={self.surname}, company={self.company}, job={self.job}, mail={self.email})"
     def contact(self):
         return f'Contact with {self.name} {self.surname} via e-mail: {self.mail}'
+    @property
+    def name_length(self):
+        return f'Name length is: {len(self.name + self.surname) + 1}'
