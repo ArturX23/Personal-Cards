@@ -9,3 +9,5 @@ class Personal_card:
         self.email = email
     def __str__(self):
         return f'{self.name} {self.surname} {self.mail}'
+    def __repr__(self):
+        return f"Personal_card(name={self.name} surname={self.surname}, company={self.company}, job={self.job}, mail={self.email})"
