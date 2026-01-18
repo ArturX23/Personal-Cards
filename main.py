@@ -7,3 +7,5 @@ class Personal_card:
         self.company = company
         self.occupation = job
         self.email = email
+    def __str__(self):
+        return f'{self.name} {self.surname} {self.mail}'
