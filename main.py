@@ -11,3 +11,5 @@ class Personal_card:
         return f'{self.name} {self.surname} {self.mail}'
     def __repr__(self):
         return f"Personal_card(name={self.name} surname={self.surname}, company={self.company}, job={self.job}, mail={self.email})"
+    def contact(self):
+        return f'Contact with {self.name} {self.surname} via e-mail: {self.mail}'
