@@ -31,6 +31,23 @@ class BusinessContact(BaseContact):
     def label_length(self):
         return f'Name length is: {len(self.name + self.surname) + 1}'
 
+#Fake contacts generator
+
+from faker import Faker
+fake = Faker()
+
+def create_contacts(quantity, contact_variant):
+    if contact_variant == 'BaseContact':
+        for _ in range(quantity):
+            print(fake.first_name(), fake.last_name(), fake.email(), fake.phone_number())
+    elif contact_variant == 'BusinessContact':
+        for _ in range(quantity):
+            print(fake.first_name(), fake.last_name(), fake.company(), fake.job(), fake.email(), fake.phone_number())
+    else:
+        print("Incorrect contact variant")
+
+#create_contacts(10, 'BaseContact') #Remove if you want to print
+
 #Names database
 
 person1 = BusinessContact(name="Elizabeth", surname="Martinez", company="Muscle Factory", job="Oceanographer", email="ElizabethMMartinez@dayrep.com", business_num="+48 239 234 987", private_num="+48 777 222 738")
@@ -58,16 +75,3 @@ for person in [person1, person2, person3, person4, person5]:
 print(person1.business_contact())
 print(person3.label_length)
 
-#Fake contacts generator
-
-from faker import Faker
-fake = Faker()
-
-def create_contacts(quantity, contact_variant):
-    if contact_variant == 'BaseContact':
-        for _ in range(quantity):
-            print(fake.first_name(), fake.last_name(), fake.email(), fake.phone_number())
-    elif contact_variant == 'BusinessContact':
-        for _ in range(quantity):
-            print(fake.first_name(), fake.last_name(), fake.company(), fake.job(), fake.email(), fake.phone_number())
-create_contacts(10, 'BusinessContact')
